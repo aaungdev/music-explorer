@@ -1,0 +1,158 @@
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 1em 0 0 0;
+  padding-bottom: 10px;
+}
+
+.green {
+  color: #14e05c;
+}
+header p {
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+.filter-bar {
+  margin-top: 20px;
+}
+
+.filter-bar select,
+.filter-bar input {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.card {
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  position: relative;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3,
+.card p {
+  padding: 10px;
+  margin: 0;
+}
+
+.card .play-button {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1db954;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.card:hover .play-button {
+  display: block;
+}
+
+#player {
+  display: none;
+  background-color: #282828;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 600px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#player .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+#player .info div {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+#player .controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#player .controls button {
+  background: none;
+  border: none;
+  color: white;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+#player .controls svg {
+  width: 24px;
+  height: 24px;
+}
+
+#player .progress-bar {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  position: relative;
+}
+
+#player .progress-bar input {
+  width: 100%;
+}
+
+#player .progress-time {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.8em;
+  position: absolute;
+  top: -20px;
+}
