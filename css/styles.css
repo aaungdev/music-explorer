@@ -20,6 +20,7 @@ header h1 {
 .green {
   color: #14e05c;
 }
+
 header p {
   font-size: 1.2em;
   margin-top: 5px;
@@ -53,7 +54,8 @@ header p {
   overflow: hidden;
   margin: 10px;
   position: relative;
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   text-align: center;
   color: #fff;
 }
@@ -97,7 +99,7 @@ header p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   max-width: 600px;
   height: 60px;
   margin-left: auto;
@@ -155,4 +157,79 @@ header p {
   font-size: 0.8em;
   position: absolute;
   top: -20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .filter-bar select,
+  .filter-bar input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #player {
+    height: auto;
+    padding: 20px;
+  }
+
+  #player .progress-bar {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #player .progress-time {
+    top: -15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  header p {
+    font-size: 0.8em;
+  }
+
+  .filter-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .filter-bar select,
+  .filter-bar input {
+    width: auto;
+    max-width: 300px;
+    margin: 5px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #player {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #player .controls button {
+    font-size: 1em;
+  }
+
+  #player .controls svg {
+    width: 20px;
+    height: 20px;
+  }
 }
